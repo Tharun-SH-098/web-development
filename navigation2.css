@@ -1,0 +1,57 @@
+/* CORRECTION OF MARGIN AND PADDING BY GIVING BOX SIZE STRUCTURE */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BACKGROUND COLOR FOR WEBPAGE IS GIVEN */
+body{
+    background-color: #e5e5e5;
+    font-family:'Poppins',sans-serif;
+}
+/* CREATEING BACKGROUND COLOR FOR NAV BAR NAMED AS MAIN BAR */
+.main-bar{
+    background-color: #22272b !important;
+    display: flow-root;
+    padding: 0 10%;
+}
+#check{
+    display: none;
+}
+.logo-header{
+    display: table;
+    float:left;
+    vertical-align: middle;
+    padding: 0;
+    color:#e5bb20;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 180px;
+    height: 68px;
+    position:relative
+    /* z-index: index; */
+    /* transition:all 0.5s; */
+    /* -moz-transition:(all 0.5s); */
+    /* -we */
+}
+.logo-header{
+    z-index: 9;
+    transition: all 0.5s;
+    -moz-transition:all 0.5s ;
+    -webkit-transition:all 0.5 ;
+    -o-transition: all 0.5s;
+    
+}
+.logo-header{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    z-index: -1;
+    right:-50px; 
+    width: 80px; 
+    transform: skew(30deg);
+    background-color: #ffe10a;
+}
